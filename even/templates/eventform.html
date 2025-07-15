@@ -1,0 +1,14 @@
+{% extends "home.html" %}
+
+{% block contant %}
+<h2 class="text-2xl font-bold mb-6">Event Form</h2>
+
+<form method="POST" class="p-6 space-y-4">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button
+    type="submit" class="bg-red-600 text-white px-4 py-2 rounded hover:bg-bule-700">
+    Save Event
+  </button>
+</form>
+{% endblock contant  %}
