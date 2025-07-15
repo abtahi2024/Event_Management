@@ -3,7 +3,7 @@ from even.models import Category,Event, Participant
 
 
 class StyleFormMixin:
-    default_classes="border border-gray-300 w-screen p-3  rounded-lg shadow-sm focus:border-rose-500 focus:ring-purple-500"
+    default_classes="border border-gray-300 w-full p-3  rounded-lg shadow-sm focus:border-rose-500 focus:ring-purple-500"
 
     def apply_styled_widget(self):
         for field_name,field in self.fields.items():
